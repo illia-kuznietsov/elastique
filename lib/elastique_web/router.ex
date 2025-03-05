@@ -17,7 +17,7 @@ defmodule ElastiqueWeb.Router do
   scope "/", ElastiqueWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", HomeLive
   end
 
   # Other scopes may use custom stacks.
